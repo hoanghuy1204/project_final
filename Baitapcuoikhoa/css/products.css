@@ -1,4 +1,4 @@
-{
+*{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -14,9 +14,23 @@
 	display: flex;
 	justify-content: space-between;
 }
-.card-left {
-	marg;
+
+.content {
+	background: blue;
 }
+.card-left .list-item-1 {
+	border: 2px solid #0F183A;
+	padding: 40px 30px;
+	margin-bottom: 20px;
+	list-style: none;
+	line-height: 2.6;
+}
+
+.text-light .container h2 {
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+
 .card-left .list-item {
 	border: 2px solid #0F183A;
 	padding: 40px 30px;
@@ -27,6 +41,8 @@
 	text-decoration: none;
 	margin: 10px;
 }
-.text-alight {
-	margin-bottom: 20px;
+
+.card-left .list-item-1 a {
+	text-decoration: none;
+	margin: 10px;
 }
