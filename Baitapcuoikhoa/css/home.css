@@ -42,6 +42,99 @@ a {
 .cart i {
   color: red;
 }
-.form-search {
-  
+/* ...................header-search.................. */
+
+
+
+
+
+/* .............................................navbar./.......................................................... */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-blue);
+  height: 80px;
+  font-size: 20px;
 }
+.navbar-nav a {
+  color: #fff;
+  font-weight: 400;
+  /* margin: 0 12px; */
+}
+.btn-group {
+  color: #000
+}
+.navbar-nav i {
+  font-size: 15px;
+}
+/* ...............submenu................ */
+.navbar .products {
+  position: relative;
+}
+.navbar .submenu {
+  position: absolute;
+  background-color: brown;
+  width: 700px;
+  /* height: 400px; */
+  padding: 30px;
+  left: 174px;
+  border-radius: 5px;
+  /* display: none; */
+  /* z-index: 999; */
+}
+.navbar .submenu li {
+  list-style: none;
+  box-sizing: border-box;
+  font-size: 17px;
+  margin-bottom: 12px;
+}
+.products:hover .submenu {
+  display: block;
+}
+/* .........................banner.................. */
+.banner {
+  min-height: 355px;
+  width: auto;
+}
+.img-banner img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 515px;
+}
+.col-6-right{
+  width: 37%;
+}
+.col-6-right .img-fluid {
+  height: 250px;
+  width: 540px;
+}
+.banner-content .container p {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #b7b7b7;
+}
+.banner-content .container h3 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+}
+.banner-content .container .btn {
+  padding: 12px 34px 14px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  background-color: #ed154a;
+}
+.banner-content .container .btn:h over {
+  background-color: #233B95;
+  transition: 1.5s ease-in-out;
+}
+/* ...............special deal......................... */
