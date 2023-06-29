@@ -102,7 +102,7 @@ a {
   height: auto;
   position: relative;
 }
-.row {
+.banner-content .container .row {
   display: flex;
   flex-wrap: wrap;
   position: absolute;
@@ -138,3 +138,140 @@ a {
   transition: 1.5s ease-in-out;
 }
 /* ...............special deal......................... */
+.special-deals {
+  align-items: center;
+  padding: 12px;
+}
+.special-deals .container {
+  text-align: center;
+}
+.special-deals h2 {
+  text-transform: uppercase;
+  color: #fff;
+  padding: 30px;
+}
+.special-deals h4 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 30px;
+}
+.special-deals .container .row img {
+  height: 310px;
+  width: 640px;
+  border-radius: 8px;
+}
+.special-deals .container .img-left {
+  position: relative;
+}
+.special-deals .container .text-deal h5{
+  position: absolute;
+  border: 1px solid #ddd;
+  color: #fff;
+  border-radius: 65px;
+  padding: 20px ;
+  background-color: #22388F;
+  top: 5%;
+  right: 5%;
+}
+.special-deals .container .text-1 h4{
+  position: absolute;
+  text-transform: uppercase;
+  font-weight: bold;
+  top: 70%;
+  left: 7%;
+  font-size: 33px;
+}
+.special-deals .container .img-right {
+  position: relative;
+}
+.special-deals .container .text-2 h4 {
+  position: absolute;
+  text-transform: uppercase;
+  font-weight: bold;
+  top: 70%;
+  left: 7%;
+  font-size: 33px;
+}
+
+/* ...........top products */
+.new-products .container {
+  text-align: center;
+  padding: 12px;
+}
+.text-show h3 {
+	color: #fff;
+}
+.product-item img {
+    width: 185px;
+    height: 236px;
+	margin-bottom: 20px;
+	background-color: var(--light-blue);
+}
+.col {
+	margin-bottom: 30px;
+	text-align: center;
+}
+.product-top span {
+	color: #ED174A;
+	font-weight: 600;
+}
+.product-price span{
+  text-decoration: line-through;
+  color: #383838;
+  font-size: 15px;
+  padding-right: 10px;
+}
+.product-info a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 15px;
+}
+.product-price {
+	color: #fff;
+}
+.product-info button {
+	border-radius: 5px;
+    padding: 3px 17px;
+	color: #fff;
+	font-weight: 300;
+	margin-top: 10px;
+  background-color: var(--dark-blue);
+}
+
+/* ............newl............ */
+.newsletter {
+	background-color: var(--light-blue);
+}
+.newsletter h3 {
+	color: #fff;
+	font-weight: 600;
+	font-size: 35px;
+}
+.newsletter p {
+	color: #A7C7CA;
+}
+.newsletter .container {
+	padding: 40px 0px;
+	width: 100%;
+}
+.newsletter-right input {
+	outline: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    width: 70%;
+    border: none;
+    float: left;
+    border-radius: 20px 0 0 20px;
+}
+.newsletter-right button {
+	cursor: pointer;
+	outline: none;
+    padding: 10px 0;
+    width: 15%;
+    border: none;
+    border-radius: 0 20px 20px 0;
+}
+/* ...........footer............ */
+footer {
+  background-color: var(--dark-blue);
+}
