@@ -14,12 +14,48 @@
     <title>Document</title>
 </head>
 <body>
-	<div class="content">
-		<img src="" alt="">
-		<center>
-			<h1>This is header</h1>
-		</center>
-	</div>
+	<header class="container">
+        <div class="container-header text-light">
+            <div class="login">
+                <a href="login.html">
+                    <i class="fa-regular fa-user"></i></a>
+            </div>
+            <h1 class="col-6">
+                <a href="home.html">Grocery Mart</a></h1>
+            <div class="header-search col-3">
+                <div class="input-group">
+                    <form action="">
+                        <input id="search-focus" type="search" id="form1" class="form-control" placeholder="Search">
+                        <button class="btn btn-primary ">
+							<span class="fas fa-search "></span>
+						</button>
+                    </form>
+                </div>
+            </div>
+            <div class="cart">
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-default navbar-fixed-top">
+        <div class="navbar-nav">
+            <a class="btn nav-item nav-link" href="#">HOME</a>
+            <div class="btn-group ">
+                <button type="button" class="btn dropdown-toggle dropdown-toggle-split text-white" data-bs-toggle="dropdown" id="dropdownMenuButton" aria-expanded="false"> PRODUCTS
+						</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Meats & Seafood</a></li>
+                    <li><a class="dropdown-item" href="#">Snack Food</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
+            <a class="btn nav-item nav-link" href="">ABOUT US</a>
+            <a class="btn nav-item nav-link" href="">CONTACT US</a>
+        </div>
+    </nav>
 	<div id="wrapper">
 		<div class="card-left">
 			<div class="text-light">
@@ -71,34 +107,33 @@
 				<div class="card-top">
 					<div class="row">
 						<div class="col-6">
-							<div class="img-center">
+							<div class="img-center-left">
 								<img src="./img/products-center1.jpg" alt="">
-							</div>
-							<div>
-								<h3>
-									Best
-									<span >Price</span>
-									On Vegetables
-								</h3>
+								<div class="text-1">
+									<h3>
+										Best
+										<span >Price</span>
+										On Vegetables
+									</h3>
+								</div>
 							</div>
 						</div>
 						<div class="col-6">
 							<div class="img-center-right">
 								<img src="./img/products-center2.jpg" alt="">
-							</div>
-							<div>
-								<h3>
-									Best
-									<span >Price</span>
-									On Vegetables adsadas
-								</h3>
+								<div class="text-2">
+									<h3>
+										Best
+										<span >for New</span>
+										Products
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="text-show">
-				<h3>Showing Results: 0-1</h3>
+				<h3>Featured products:</h3>
 			</div>
 			<div class="container ">
 				<ul class="product">
@@ -106,8 +141,8 @@
 						<div class="col">
 							<li class="product-item">
 								<div class="product-top">
-									<a href="" class="product-thumb">
-										<img src="./img/product1.jpg" alt="">
+									<a href="" class="product-thumb" type="button" data-bs-toggle="modal" data-bs-target="#detailsModal">
+										<img src="./img/pp9.png" alt="">
 									</a>
 									<br>
 									<span>Red Chilli Powder</span>
@@ -115,7 +150,26 @@
 								</div>
 								<div class="product-info">
 									<a href="" class="product-name"></a>
-									<div class="product-price">123$</div>
+									<div class="product-price"><span>520</span> 123$</div>
+									<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#cartModal">
+										Add To Cart
+									  </button>
+								</div>
+							</li>
+						</div>
+						<div class="col">
+							<li class="product-item">
+								<div class="product-top">
+									<a href="" class="product-thumb" type="button" data-bs-toggle="modal" data-bs-target="#detailsModal">
+										<img src="./img/pp9.png" alt="">
+									</a>
+									<br>
+									<span>Red Chilli Powder</span>
+									<!-- add to cart -->
+								</div>
+								<div class="product-info">
+									<a href="" class="product-name"></a>
+									<div class="product-price"><span>520</span> 123$</div>
 									<button>Add to cart</button>
 								</div>
 							</li>
@@ -123,8 +177,8 @@
 						<div class="col">
 							<li class="product-item">
 								<div class="product-top">
-									<a href="" class="product-thumb">
-										<img src="./img/2_rice.png" alt="">
+									<a href="" class="product-thumb" type="button" data-bs-toggle="modal" data-bs-target="#detailsModal">
+										<img src="./img/pp9.png" alt="">
 									</a>
 									<br>
 									<span>Red Chilli Powder</span>
@@ -132,77 +186,7 @@
 								</div>
 								<div class="product-info">
 									<a href="" class="product-name"></a>
-									<div class="product-price">123$</div>
-									<button>Add to cart</button>
-								</div>
-							</li>
-						</div>
-						<div class="col">
-							<li class="product-item">
-								<div class="product-top">
-									<a href="" class="product-thumb">
-										<img src="./img/3.jpg" alt="">
-									</a>
-									<br>
-									<span>Red Chilli Powder</span>
-									<!-- add to cart -->
-								</div>
-								<div class="product-info">
-									<a href="" class="product-name"></a>
-									<div class="product-price">123$</div>
-									<button>Add to cart</button>
-								</div>
-							</li>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col">
-							<li class="product-item">
-								<div class="product-top">
-									<a href="" class="product-thumb">
-										<img src="./img/4.jpg" alt="">
-									</a>
-									<br>
-									<span>Red Chilli Powder</span>
-									<!-- add to cart -->
-								</div>
-								<div class="product-info">
-									<a href="" class="product-name"></a>
-									<div class="product-price">123$</div>
-									<button>Add to cart</button>
-								</div>
-							</li>
-						</div>
-						<div class="col">
-							<li class="product-item">
-								<div class="product-top">
-									<a href="" class="product-thumb">
-										<img src="./img/5.jpg" alt="">
-									</a>
-									<br>
-									<span>Red Chilli Powder</span>
-									<!-- add to cart -->
-								</div>
-								<div class="product-info">
-									<a href="" class="product-name"></a>
-									<div class="product-price">123$</div>
-									<button>Add to cart</button>
-								</div>
-							</li>
-						</div>
-						<div class="col">
-							<li class="product-item">
-								<div class="product-top">
-									<a href="" class="product-thumb">
-										<img src="./img/6.jpg" alt="">
-									</a>
-									<br>
-									<span>Red Chilli Powder</span>
-									<!-- add to cart -->
-								</div>
-								<div class="product-info">
-									<a href="" class="product-name"></a>
-									<div class="product-price">123$</div>
+									<div class="product-price"><span>520</span> 123$</div>
 									<button>Add to cart</button>
 								</div>
 							</li>
@@ -212,8 +196,8 @@
 						<div class="col">
 							<li class="product-item">
 								<div class="product-top">
-									<a href="" class="product-thumb">
-										<img src="./img/7.jpg" alt="">
+									<a href="" class="product-thumb" type="button" data-bs-toggle="modal" data-bs-target="#detailsModal">
+										<img src="./img/pp9.png" alt="">
 									</a>
 									<br>
 									<span>Red Chilli Powder</span>
@@ -221,7 +205,7 @@
 								</div>
 								<div class="product-info">
 									<a href="" class="product-name"></a>
-									<div class="product-price">123$</div>
+									<div class="product-price"><span>520</span> 123$</div>
 									<button>Add to cart</button>
 								</div>
 							</li>
@@ -229,8 +213,61 @@
 						<div class="col">
 							<li class="product-item">
 								<div class="product-top">
-									<a href="" class="product-thumb">
-										<img src="./img/8.jpg" alt="">
+									<a href="" class="product-thumb" type="button" data-bs-toggle="modal" data-bs-target="#detailsModal">
+										<img src="./img/pp9.png" alt="">
+									</a>
+									<br>
+									<span>Red Chilli Powder</span>
+									<!-- add to cart -->
+								</div>
+								<div class="product-info">
+									<a href="" class="product-name"></a>
+									<div class="product-price"><span>520</span> 123$</div>
+									<button>Add to cart</button>
+								</div>
+							</li>
+						</div>
+						<div class="col">
+							<li class="product-item">
+								<div class="product-top">
+									<a href="" class="product-thumb" type="button" data-bs-toggle="modal" data-bs-target="#detailsModal">
+										<img src="./img/pp9.png" alt="">
+									</a>
+									<br>
+									<span>Red Chilli Powder</span>
+									<!-- add to cart -->
+								</div>
+								<div class="product-info">
+									<a href="" class="product-name"></a>
+									<div class="product-price"><span>520</span> 123$</div>
+									<button>Add to cart</button>
+								</div>
+							</li>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<li class="product-item">
+								<div class="product-top">
+									<a href="" class="product-thumb" type="button" data-bs-toggle="modal" data-bs-target="#detailsModal">
+										<img src="./img/pp9.png" alt="">
+									</a>
+									<br>
+									<span>Red Chilli Powder</span>
+									<!-- add to cart -->
+								</div>
+								<div class="product-info">
+									<a href="" class="product-name"></a>
+									<div class="product-price"><span>520</span> 123$</div>
+									<button>Add to cart</button>
+								</div>
+							</li>
+						</div>
+						<div class="col">
+							<li class="product-item">
+								<div class="product-top">
+									<a href="" class="product-thumb" type="button" data-bs-toggle="modal" data-bs-target="#detailsModal">
+										<img src="./img/pp9.png" alt="">
 									</a>
 									<br>
 									<span>Red Chilli Powder</span>
@@ -238,7 +275,7 @@
 								</div>
 								<div class="product-info">
 									<a href="" class="produc-name"></a>
-									<div class="product-price">123$</div>
+									<div class="product-price"><span>520</span> 123$</div>
 									<button>Add to cart</button>
 								</div>
 							</li>
@@ -246,8 +283,8 @@
 						<div class="col">
 							<li class="product-item">
 								<div class="product-top">
-									<a href="" class="product-thumb">
-										<img src="./img/9.jpg" alt="">
+									<a href="" class="product-thumb" type="button" data-bs-toggle="modal" data-bs-target="#detailsModal">
+										<img src="./img/pp9.png" alt="">
 									</a>
 									<br>
 									<span>Red Chilli Powder</span>
@@ -255,7 +292,7 @@
 								</div>
 								<div class="product-info">
 									<a href="" class="product-name"></a>
-									<div class="product-price">123$</div>
+									<div class="product-price"><span>520</span> 123$</div>
 									<button>Add to cart</button>
 								</div>
 							</li>		
@@ -267,6 +304,48 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- .....modal detail...... -->
+	<div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1"><strong>Details</strong></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body">
+                        <div id="details1">
+                            <div class="modal-header">
+                                <img src="./img/p1.png" alt="" style="width: 100px; height: 100px">
+                                <h4>Winterwear Liquid</h4>
+                            </div>
+
+                            <div class="modal-container">
+                                <h5><strong>Description</strong></h5>
+                                <span>  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+                            </div>
+                        </div>
+                        <div class="input-group" style="width: 45%;">
+                            <span style=" margin-top: 10px;"><strong>Quantity:</strong> &nbsp;</span>
+                            <div class="input-group-prepend">
+                                <button class="btn btn-outline-dark"><span id="">-</span></button>
+                            </div>
+                            <input type="text" class="form-control" style="width:30px !important;" placeholder="1">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-dark"><span id="">+</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 	<div class="newsletter">
 		<div class="container">
 			<div class="row">
