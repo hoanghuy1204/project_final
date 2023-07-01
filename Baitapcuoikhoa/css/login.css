@@ -35,6 +35,10 @@ body {
 .wrapper.active .form-wrapper.sign-in {
     transform: translateY(-450px);
 }
+.sign-in button a {
+    text-decoration: none;
+    color: #000;
+}
 .wrapper .form-wrapper.sign-up {
     position: absolute;
     top: 450px;

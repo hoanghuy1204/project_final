@@ -3,23 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<link rel="stylesheet" href="./css/products.css">
-
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="./css/products.css">
+    <title>Floor & Other Cleaners</title>
 </head>
 <body>
-	<div class="content">
-		<img src="" alt="">
-		<center>
-			<h1>This is header</h1>
-		</center>
-	</div>
+	<header class="container">
+        <div class="container-header text-light">
+            <div class="login">
+                <a href="login.html">
+                    <i class="fa-regular fa-user"></i></a>
+            </div>
+            <h1 class="col-6">
+                <a href="home.html">Grocery Mart</a></h1>
+            <div class="header-search col-3">
+                <div class="input-group">
+                    <form action="">
+                        <input id="search-focus" type="search" id="form1" class="form-control" placeholder="Search">
+                        <button class="btn btn-primary ">
+							<span class="fas fa-search "></span>
+						</button>
+                    </form>
+                </div>
+            </div>
+            <div class="cart">
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-default navbar-fixed-top">
+        <div class="navbar-nav">
+            <a class="btn nav-item nav-link" href="home.html">HOME</a>
+            <div class="btn-group ">
+                <button type="button" class="btn dropdown-toggle dropdown-toggle-split text-white" data-bs-toggle="dropdown" id="dropdownMenuButton" aria-expanded="false"> PRODUCTS
+						</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="products.html">Meats & Seafood</a></li>
+                    <li><a class="dropdown-item" href="product2.html">Floor & Other Cleaners</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
+            <a class="btn nav-item nav-link" href="aboutus.html">ABOUT US</a>
+        </div>
+    </nav>
 	<div id="wrapper">
 		<div class="card-left">
 			<div class="text-light">
@@ -72,24 +104,24 @@
 					<div class="row">
 						<div class="col-6">
 							<div class="img-center-left">
-								<img src="./img/products-center1.jpg" alt="">
+								<img src="./img/pr1.jpg" alt="">
 								<div class="text-1">
 									<h3>
-										Best
-										<span >Price</span>
-										On Vegetables
+										Kitchen Appliances
+										<span >Up To</span>
+										25% Discount
 									</h3>
 								</div>
 							</div>
 						</div>
 						<div class="col-6">
 							<div class="img-center-right">
-								<img src="./img/products-center2.jpg" alt="">
+								<img src="./img/pr2.jpg" alt="">
 								<div class="text-2">
 									<h3>
-										Best
-										<span >for New</span>
-										Products
+										Home Entertainment
+										<span >Mega</span>
+										Deals
 								</div>
 							</div>
 						</div>
@@ -97,7 +129,7 @@
 				</div>
 			</div>
 			<div class="text-show">
-				<h3>Showing Results: 0-1</h3>
+				<h3>Featured products:</h3>
 			</div>
 			<div class="container ">
 				<ul class="product">
@@ -105,24 +137,26 @@
 						<div class="col">
 							<li class="product-item">
 								<div class="product-top">
-									<a href="" class="product-thumb">
+									<a href="" class="product-thumb" type="button" data-bs-toggle="modal" data-bs-target="#detailsModal">
 										<img src="./img/p1.png" alt="">
 									</a>
 									<br>
-									<span>Winterwear Liquid</span>
+									<span>Godrej Ezee Liquid Detergent</span>
 									<!-- add to cart -->
 								</div>
 								<div class="product-info">
 									<a href="" class="product-name"></a>
-									<div class="product-price"><span>520</span> 123$</div>
-									<button>Add to cart</button>
+									<div class="product-price"><span>$650</span> 245$</div>
+									<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#cartModal">
+										Add To Cart
+									  </button>
 								</div>
 							</li>
 						</div>
 						<div class="col">
 							<li class="product-item">
 								<div class="product-top">
-									<a href="" class="product-thumb">
+									<a href="" class="product-thumb" type="button" data-bs-toggle="modal" data-bs-target="#detailsModal">
 										<img src="./img/p2.png" alt="">
 									</a>
 									<br>
@@ -131,15 +165,17 @@
 								</div>
 								<div class="product-info">
 									<a href="" class="product-name"></a>
-									<div class="product-price"><span>520</span> 123$</div>
-									<button>Add to cart</button>
+									<div class="product-price"><span>$960</span> 920$</div>
+									<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#cartModal">
+										Add To Cart
+									  </button>
 								</div>
 							</li>
 						</div>
 						<div class="col">
 							<li class="product-item">
 								<div class="product-top">
-									<a href="" class="product-thumb">
+									<a href="" class="product-thumb" type="button" data-bs-toggle="modal" data-bs-target="#detailsModal">
 										<img src="./img/p3.png" alt="">
 									</a>
 									<br>
@@ -148,8 +184,10 @@
 								</div>
 								<div class="product-info">
 									<a href="" class="product-name"></a>
-									<div class="product-price"><span>520</span> 123$</div>
-									<button>Add to cart</button>
+									<div class="product-price"><span>$300</span> 180$</div>
+									<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#cartModal">
+										Add To Cart
+									  </button>
 								</div>
 							</li>
 						</div>
@@ -158,7 +196,7 @@
 						<div class="col">
 							<li class="product-item">
 								<div class="product-top">
-									<a href="" class="product-thumb">
+									<a href="" class="product-thumb" type="button" data-bs-toggle="modal" data-bs-target="#detailsModal">
 										<img src="./img/p4.png" alt="">
 									</a>
 									<br>
@@ -167,33 +205,36 @@
 								</div>
 								<div class="product-info">
 									<a href="" class="product-name"></a>
-									<div class="product-price"><span>520</span> 123$</div>
-									<button>Add to cart</button>
+									<div class="product-price"><span>$150</span> 145$</div>
+									<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#cartModal">
+										Add To Cart
+									  </button>
 								</div>
 							</li>
 						</div>
 						<div class="col">
 							<li class="product-item">
 								<div class="product-top">
-									<a href="" class="product-thumb">
+									<a href="" class="product-thumb" type="button" data-bs-toggle="modal" data-bs-target="#detailsModal">
 										<img src="./img/p5.png" alt="">
 									</a>
 									<br>
 									<span>Dry Cleaning Wipes</span>
 									<!-- add to cart -->
 								</div>
-
 								<div class="product-info">
 									<a href="" class="product-name"></a>
-									<div class="product-price"><span>520</span> 123$</div>
-									<button>Add to cart</button>
+									<div class="product-price"><span>$280</span> 250$</div>
+									<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#cartModal">
+										Add To Cart
+									  </button>
 								</div>
 							</li>
 						</div>
 						<div class="col">
 							<li class="product-item">
 								<div class="product-top">
-									<a href="" class="product-thumb">
+									<a href="" class="product-thumb" type="button" data-bs-toggle="modal" data-bs-target="#detailsModal">
 										<img src="./img/p6.png" alt="">
 									</a>
 									<br>
@@ -202,8 +243,10 @@
 								</div>
 								<div class="product-info">
 									<a href="" class="product-name"></a>
-									<div class="product-price"><span>520</span> 123$</div>
-									<button>Add to cart</button>
+									<div class="product-price"><span>$20</span> 15$</div>
+									<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#cartModal">
+										Add To Cart
+									  </button>
 								</div>
 							</li>
 						</div>
@@ -212,51 +255,57 @@
 						<div class="col">
 							<li class="product-item">
 								<div class="product-top">
-									<a href="" class="product-thumb">
+									<a href="" class="product-thumb" type="button" data-bs-toggle="modal" data-bs-target="#detailsModal">
 										<img src="./img/p7-removebg-preview.png" alt="">
 									</a>
 									<br>
-									<span>COLLIN 125ML</span>
+									<span>Collin 125ML</span>
 									<!-- add to cart -->
 								</div>
 								<div class="product-info">
 									<a href="" class="product-name"></a>
-									<div class="product-price"><span>520</span> 123$</div>
-									<button>Add to cart</button>
+									<div class="product-price"><span>$290</span> 250$</div>
+									<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#cartModal">
+										Add To Cart
+									  </button>
 								</div>
 							</li>
 						</div>
 						<div class="col">
 							<li class="product-item">
 								<div class="product-top">
-									<a href="" class="product-thumb">
+									<a href="" class="product-thumb" type="button" data-bs-toggle="modal" data-bs-target="#detailsModal">
 										<img src="./img/p8-removebg-preview.png" alt="">
 									</a>
 									<br>
-									<span>BONBELLA BROOM</span>
+									<span>Bonbella Broom</span>
 									<!-- add to cart -->
 								</div>
 								<div class="product-info">
 									<a href="" class="produc-name"></a>
-									<div class="product-price"><span>520</span> 123$</div>
-									<button>Add to cart</button>
+									<div class="product-price"><span>$100</span> 49$</div>
+									<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#cartModal">
+										Add To Cart
+									  </button>
 								</div>
 							</li>
 						</div>
 						<div class="col">
 							<li class="product-item">
 								<div class="product-top">
-									<a href="" class="product-thumb">
+									<a href="" class="product-thumb" type="button" data-bs-toggle="modal" data-bs-target="#detailsModal">
 										<img src="./img/p10-removebg-preview.png" alt="">
 									</a>
 									<br>
-									<span>Gala Double Lip Wiper</span>
+									<span>Gala double Lip Wiper</span>
 									<!-- add to cart -->
 								</div>
 								<div class="product-info">
 									<a href="" class="product-name"></a>
-									<div class="product-price"><span>520</span> 123$</div>
-									<button>Add to cart</button>
+									<div class="product-price"><span>$200</span> 160$</div>
+									<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#cartModal">
+										Add To Cart
+									  </button>
 								</div>
 							</li>		
 						</div>
@@ -267,6 +316,48 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- .....modal detail...... -->
+	<div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1"><strong>Details</strong></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body">
+                        <div id="details1">
+                            <div class="modal-header">
+                                <img src="./img/p1.png" alt="" style="width: 100px; height: 100px">
+                                <h4>Winterwear Liquid</h4>
+                            </div>
+
+                            <div class="modal-container">
+                                <h5><strong>Description</strong></h5>
+                                <span>  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+                            </div>
+                        </div>
+                        <div class="input-group" style="width: 45%;">
+                            <span style=" margin-top: 10px;"><strong>Quantity:</strong> &nbsp;</span>
+                            <div class="input-group-prepend">
+                                <button class="btn btn-outline-dark"><span id="">-</span></button>
+                            </div>
+                            <input type="text" class="form-control" style="width:30px !important;" placeholder="1">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-dark"><span id="">+</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 	<div class="newsletter">
 		<div class="container">
 			<div class="row">
